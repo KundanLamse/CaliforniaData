@@ -1,3 +1,31 @@
 <html>
-    <H1> Hello </H1>
+    <H1> Get Your House Prices Super Fast </H1>
+    <form action="{{url_for('predict')}}" method="Post">
+            <label for="MedInc">MedInc:</label>
+            <input type="text" id="MedInc" name="MedInc" placeholder="MedInc" required><br><br>
+    
+            <label for="HouseAge">HouseAge:</label>
+            <input type="text" id="HouseAge" name="HouseAge" placeholder="HouseAge" required><br><br>
+    
+            <label for="AveRooms">AveRooms:</label>
+            <input type="text" id="AveRooms" name="AveRooms" placeholder="AveRooms" required><br><br>
+    
+            <label for="AveBedrms">AveBedrms:</label>
+            <input type="text" id="AveBedrms" name="AveBedrms" placeholder="AveBedrms" required><br><br>
+    
+            <label for="AveOccup">AveOccup:</label>
+            <input type="text" id="AveOccup" name="AveOccup" placeholder="AveOccup" required><br><br>
+    
+            <label for="Latitude">Latitude:</label>
+            <input type="text" id="Latitude" name="Latitude" placeholder="Latitude" required><br><br>
+    
+            <label for="Longitude">Longitude:</label>
+            <input type="text" id="Longitude" name="Longitude" placeholder="Longitude" required><br><br>
+    
+            <button type="submit">Submit</button>
+        
+    </form>
+    <div>
+     {{prediction_text}}   
+    </div>
 </html>
